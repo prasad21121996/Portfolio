@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Prasad Deshmukh – Portfolio</title>
+
+  <style>
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background: #f9fafc;
+      margin: 0;
+      padding: 0;
+      color: #333;
+    }
+
+    .navbar {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      background: white;
+      padding: 1rem 2rem;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+    }
+
+    .logo {
+      font-weight: 600;
+      font-size: 1.2rem;
+    }
+
+    .logo span {
+      color: #007bff;
+      font-weight: bold;
+    }
+
+    .nav-links {
+      display: flex;
+      gap: 1.5rem;
+      list-style: none;
+    }
+
+    .nav-links a {
+      text-decoration: none;
+      color: #333;
+      position: relative;
+    }
+
+    .nav-links a::after {
+      content: '';
+      position: absolute;
+      left: 0;
+      bottom: -3px;
+      height: 2px;
+      width: 0%;
+      background-color: #007bff;
+      transition: width 0.3s ease-in-out;
+    }
+
+    .nav-links a:hover::after {
+      width: 100%;
+    }
+
+    .resume-btn {
+      padding: 6px 12px;
+      border: 1px solid #007bff;
+      border-radius: 4px;
+      color: #007bff;
+      text-decoration: none;
+    }
+
+    .hero {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+      padding: 1rem 3rem;
+      min-height: 500px;
+      background-color: #f4f6fa;
+      border-radius: 0 0 30px 30px;
+    }
+    
+    .section {
+      max-width: 1000px;
+      margin: 2rem auto;
+      padding: 2rem;
+      background: white;
+      border-radius: 12px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.06);
+    }
+    
+    .intro {
+      max-width: 500px;
+    }
+    .intro p {
+      font-size: 2rem;
+      margin: 1rem 0;
+    }
+    .intro h1 {
+      font-size: 3rem;
+      font-family: 'Comic Sans MS', cursive;
+      margin: 1rem 0;
+    }
+
+    .view-resume {
+      display: inline-block;
+      margin: 1rem 0;
+      padding: 0.5rem 1rem;
+      color: #007bff;
+      border: 2px solid #007bff;
+      border-radius: 6px;
+      text-decoration: none;
+    }
+
+    .social-icons {
+      margin-top: 1rem;
+    }
+
+    .social-icons img {
+      height: 32px;
+      margin-right: 1rem;
+      transition: transform 0.3s ease;
+    }
+
+    .social-icons img:hover {
+      transform: scale(1.1);
+    }
+
+    .profile-pic img {
+      width: 500px;
+      height: 500px;
+      object-fit: cover;
+      border-radius: 45% 55% 40% 60% / 60% 40% 60% 40%;
+      box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+    }
+
+
+
+    .section h2 {
+      color: #007bff;
+      margin-bottom: 1rem;
+    }
+
+    .project-card {
+      margin-bottom: 2rem;
+    }
+
+    .project-card img {
+      width: 100%;
+      max-width: 700px;
+      border-radius: 8px;
+      margin-top: 0.5rem;
+    }
+
+    /* Inline scroll animation */
+    .fade-in {
+      opacity: 0;
+      transform: translateY(40px);
+      transition: all 0.8s ease-out;
+    }
+
+    .fade-in.visible {
+      opacity: 1;
+      transform: translateY(0);
+    }
+    .logo-img {
+        height: 50px;
+        object-fit: contain;
+        vertical-align: middle;
+        }
+  </style>
+</head>
+<body>
+
+  <nav class="navbar">
+    <div class="logo">
+    <a href="#home">
+        <img src="assets/Prasad.png" alt="Prasad Logo" class="logo-img" />
+    </a>
+    </div>
+    <ul class="nav-links">
+      <li><a href="#about">About</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#achievements">Achievements</a></li>
+      <li><a href="#contact">Contact</a></li>
+      <li><a class="resume-btn" href="resume.pdf" target="_blank">Resume</a></li>
+    </ul>
+  </nav>
+
+  <header class="hero fade-in">
+    <div class="intro">
+      <p>Hello! 👋 My name is</p>
+      <h1>PRASAD DESHMUKH</h1>
+      <p>I'm an Data Engineer</p>
+      <a class="view-resume" href="resume.pdf" target="_blank">View Resume</a>
+      <div class="social-icons">
+        <a href="#"><img src="assets/email.png" alt="Email" /></a>
+        <a href="https://github.com/prasad21121996" target="_blank" rel="noopener noreferrer">
+        <img src="assets/github.png" alt="GitHub" />
+        </a>
+        <a href="https://www.linkedin.com/in/prasad-deshmukh-586690130/" target="_blank" rel="noopener noreferrer">
+        <img src="assets/linkedin.png" alt="LinkedIn" />
+        </a>
+      </div>
+    </div>
+    <div class="profile-pic">
+      <img src="assets/prasad.jpg" alt="Prasad Deshmukh" />
+    </div>
+  </header>
+
+    <section id="about" class="section fade-in">
+    <h2>About Me</h2>
+    <p>
+        I am an <strong>experienced Lead Data Engineer</strong> with <strong>6+ years</strong> of success designing <strong>scalable cloud-based Data Lakes and Warehouses</strong> using <strong>AWS</strong>, <strong>Snowflake</strong>, and <strong>PySpark</strong>. I specialize in building <strong>metadata-driven ingestion frameworks</strong>, implementing <strong>DevOps pipelines</strong> (<strong>Azure & AWS</strong>), and leading <strong>high-performing data engineering teams</strong>.
+    </p>
+    <p>
+        With a <strong>dedicated and energetic mindset</strong>, I bring a <strong>purpose-driven approach</strong> to the <strong>science of data</strong>, <strong>cloud architecture</strong>, and <strong>Agile project delivery</strong>. I’ve led multiple <strong>IT modernization</strong> and <strong>system integration</strong> initiatives, delivering <strong>robust, scalable solutions</strong> in fast-paced environments.
+    </p>
+    <p>
+        My expertise includes <strong>research, design, development, testing, and deployment</strong> of end-to-end data platforms. I’m passionate about writing <strong>clean, maintainable code</strong> and collaborating within <strong>cross-functional teams</strong>. I have strong <strong>communication skills</strong>, hands-on knowledge of <strong>modern data tools</strong>, and a deep understanding of <strong>data modeling</strong> and <strong>pipeline architecture</strong>.
+    </p>
+    <p>
+        Known for working with <strong>minimal supervision</strong>, I thrive in solving <strong>business challenges</strong> through <strong>innovative technical strategies</strong> that bridge the gap between <strong>engineering and business goals</strong>—always keeping the <strong>big picture</strong> in mind.
+    </p>
+    </section>
+
+
+
+  <section id="projects" class="section fade-in">
+    <h2>Projects</h2>
+    <div class="project-card">
+      <h3>Metadata Ingestion Framework</h3>
+      <p>Automated external table creation and PII masking on AWS + Snowflake.</p>
+      <img src="assets/metadata-architecture.png" alt="Metadata Architecture" />
+    </div>
+    <div class="project-card">
+      <h3>Streamlit Data Uploader</h3>
+      <p>Upload, transform, and load Excel/CSV into Snowflake.</p>
+      <img src="assets/streamlit-ui.png" alt="Streamlit UI" />
+    </div>
+    <div class="project-card">
+      <h3>Real-Time Snowpipe Pipeline</h3>
+      <p>Implemented using EventBridge, S3, SNS, and Lambda.</p>
+      <img src="assets/snowpipe-flow.png" alt="Snowpipe Diagram" />
+    </div>
+  </section>
+
+  <section id="achievements" class="section fade-in">
+    <h2>Achievements</h2>
+    <ul>
+      <li>AWS Certified Developer – Associate</li>
+      <li>Reduced ETL runtime by 60%</li>
+      <li>Streamlit app adopted by 3+ teams</li>
+    </ul>
+  </section>
+
+  <section id="contact" class="section fade-in">
+    <h2>04. Contact</h2>
+    <p>You can reach me at <strong>prasad21121996@gmail.com</strong> or via LinkedIn. I'm happy to connect!</p>
+  </section>
+
+  <script>
+    const observer = new IntersectionObserver(entries => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add("visible");
+        }
+      });
+    });
+
+    document.querySelectorAll(".fade-in").forEach(el => observer.observe(el));
+  </script>
+
+</body>
+</html>

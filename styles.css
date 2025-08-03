@@ -1,0 +1,85 @@
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: #f9fafc;
+  margin: 0;
+  padding: 0;
+  color: #333;
+}
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #fff;
+  padding: 1rem 2rem;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+}
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 1.5rem;
+}
+.nav-links a {
+  text-decoration: none;
+  color: #333;
+}
+.resume-btn {
+  padding: 0.4rem 1rem;
+  border: 1px solid #007bff;
+  border-radius: 4px;
+  color: #007bff;
+}
+.hero {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 3rem 2rem;
+}
+.intro {
+  max-width: 500px;
+}
+.intro h1 {
+  font-family: 'Comic Sans MS', cursive, sans-serif;
+  font-size: 2.5rem;
+}
+.view-resume {
+  display: inline-block;
+  margin: 1rem 0;
+  padding: 0.5rem 1rem;
+  border: 2px solid #007bff;
+  color: #007bff;
+  border-radius: 6px;
+  text-decoration: none;
+}
+.social-icons img {
+  height: 30px;
+  margin-right: 1rem;
+}
+.profile-pic img {
+  width: 220px;
+  height: 220px;
+  object-fit: cover;
+  border-radius: 45% 55% 40% 60% / 60% 40% 60% 40%;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+}
+.section {
+  padding: 2rem;
+  background: #fff;
+  margin: 1rem auto;
+  border-radius: 12px;
+  width: 90%;
+  max-width: 900px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+}
+.section h2 {
+  color: #007bff;
+}
+.project-card {
+  margin-top: 1.5rem;
+}
+.project-card img {
+  width: 100%;
+  max-width: 700px;
+  border-radius: 8px;
+  margin-top: 0.5rem;
+}
